@@ -1,0 +1,48 @@
+#lawyers_landing{
+    background: url('../lawyer_page_img/back_law1.jpg') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+#lawyers_landing::before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+.lawyer_wel{
+    color: #fff;
+    z-index: 1;
+}
+.lawyer_wel h2{
+    font-size: 60px;
+}
+.lawyer_wel ul{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    font-size: 25px;
+}
+.lawyer_wel ul li{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+}
+.lawyer_wel ul li i{
+    padding-top: 2px;
+}
+
+.lawyer_wel ul li a{
+    color: #fff;
+    transition: 0.5s;
+    font-weight: 600;
+}
+#lawyer_home a:hover {
+    color: rgb(95, 170, 255);
+}

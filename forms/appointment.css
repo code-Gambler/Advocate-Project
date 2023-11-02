@@ -1,0 +1,373 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(pexels.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*cover whole background */
+}
+
+#logintitle {
+
+    font-size: 33px;
+    text-align: center;
+    display: block;
+    padding-bottom: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 600px;
+    padding: 30px;
+    margin-left: 480px;
+    margin-top: 60px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: border-box;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(157, 173, 180);
+    opacity: 100px;
+    opacity: 1;
+}
+
+.inputusername 
+{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 10%;
+    
+}
+
+input[type="date"],
+select,
+textarea {
+    width: 420px;
+    height: 30px;
+    margin: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #ced4da;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+
+}
+
+input[type="date"] {
+    margin-left: 50px;
+    width: 420px;
+
+}
+
+input[type="submit"],
+button{
+    margin-left: 80px;
+    text-align: center center;
+    border-radius: 10px;
+    border: 2px solid black;
+    border-width: 2px;
+    height: 30px;
+    width: 180px;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    box-sizing: border-box;
+    background-color: rgb(187, 175, 175);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+button{
+    width: 75px;
+    margin-left: 170px;
+    background-color: white;
+    margin-top: -20px;
+}
+button:hover
+{
+    background-color: rgb(185, 185, 179);
+}
+textarea {
+    padding-top: 2px;
+    min-height: 30px;
+    resize: vertical;
+    width: 420px;
+    margin-bottom: 20px;
+}
+
+#linktofee {
+    /*remove underline from link*/
+    text-decoration: none;
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 210px;
+    height: 30px;
+    font-weight: 200;
+    margin-top: auto;
+    margin-left: 260px;
+    margin-bottom: -29px;
+    padding-left:0px;
+    padding-top: 2px;
+    text-align: center center;
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#j,
+#i {
+    border: 2px black;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: inherit;
+    font-weight: 200;
+    height: 30px;
+    width: 210px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+#i {
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+#j {
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+
+::placeholder {
+    font-weight:200;
+    color: black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: sans-serif;
+    /* overflow: hidden; */
+    user-select: none;
+    background-color: white;
+  }
+  
+  .navbar .logo {
+    color: #007bff;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  
+  .navbar .logo1 {
+    color: #000000;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: -2px;
+  }
+  
+  .navbar {
+    height: 70px;
+    background: white;
+    top: 0;
+    position: sticky;
+    /* width: 10px; */
+    z-index: 50;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+  }
+  
+  /* animation effect */
+  
+  .navbar ul li ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #006fe6;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0px;
+    transition: .3s;
+  }
+  
+  .navbar ul li ul li a:hover:after {
+    width: 100%;
+  }
+  
+  /*------------------*/
+  
+  .navbar ul {
+    float: right;
+    padding-right: 400px;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+  }
+  
+  .navbar ul li a {
+    color: black;
+    display: block;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    transition: .5s;
+  }
+  
+  .navbar ul li a:hover, .navbar ul li a.active {
+    color: #007bff;
+  }
+  
+  .navbar ul ul {
+    position: absolute;
+    top: 85px;
+    /* border-top: 3px solid #007bff; */
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .navbar ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  
+  .navbar ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-left: 4px solid #007bff;
+    margin: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: none;
+  }
+  
+  .navbar ul ul li a {
+    line-height: 50px;
+  }
+  
+  .navbar ul ul ul {
+    border-top: none;
+  }
+  
+  .navbar ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  
+  .navbar ul ul li a i {
+    margin-left: 5px;
+  }
+  
+  
+  
+  .navbar .button {
+    position: absolute;
+    top: 12px;
+    padding: 10px 35px;
+    text-align: center;
+    background-color: #007bff;
+    right: 61px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 255, 0);
+    color: white;
+    font-size: 20px;
+  }
+  .navbar .button:hover{
+      background-color: #228cfd;
+      border: 2px solid #0066d3;
+  }
+  
+  /* LANDING CSS */
+  
+  .landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 67vh;
+  }
+  .landing::before{
+    content: "";
+    background: url(Form/carousel-2.jpg)no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.8;
+    /* box-shadow: inset 0px 0px 5px #000000; */
+    height: 600px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .landingText h1 {
+    font-size: 45px;
+    margin: 0;
+  }
+  .landingText h2 {
+    font-size: 35px;
+    margin: 0;
+  }
+  
+  .landingText h3 {
+    margin: 6px;
+    font-size: 20px;
+    opacity: 0.3;
+    line-height: 30px;
+  }
+  
+  .landingText .btn {
+    width: 120px;
+    margin-top: 30px;
+    padding: 14px 20px 14px 20px;
+    background-color: #2f8be0;
+    border-radius: 45px;
+    text-align: center
+  }
+  
+  .landingText .btn a {
+    font-size: 1.2vw;
+    color: #fff;
+  }
+  
+  /* Medical Services */

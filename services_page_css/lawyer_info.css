@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200&family=Roboto+Mono:wght@300&display=swap');
+/* lawyer shortcut box start */
+#lawyers_info {
+    margin: 0;
+    padding: 0%
+}
+
+#lawyers_info .lawyer_shortcut {
+    text-align: center;
+    margin: 10px;
+    padding: 10px 5px;
+    font-size: 28px;
+    padding-top: 32px;
+}
+
+#lawyers_info .lawyer_shortcutBx {
+    max-width: 1300px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lawyer_shortcutBx .lawyer_sBx {
+    margin: 15px 10px;
+    width: 280px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px rgb(209, 209, 209);
+    transition: 0.5s;
+    background: rgba(0, 31, 63, 0.220);
+}
+.lawyer_shortcutBx .lawyer_sBx:hover{
+    transform: scale(1.01);
+    box-shadow: 7px 7px 13px rgba(78, 78, 78, 0.6);
+}
+
+.lawyer_S_imgBx img {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.lawyer_sBx .lawyer_contentBx {
+    padding: 5px 10px;
+    height: 88px;
+}
+
+.lawyer_sBx .lawyer_contentBx h2 {
+    text-align: center;
+}
+
+.lawyer_sBx .lawyer_contentBx p {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    color: #0f0f0fbe;
+}
+
+.lawyer_sBx .lawyer_s_button{
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    padding: 15px 20px;
+    border-bottom-left-radius: 13px;
+    background: #00203fff;
+    border-bottom-right-radius: 13px
+
+}
+
+.lawyer_s_button a {
+    color: white;
+
+}
+
+/* lawyer shortcut box end */
+/* lawyer detail list start */
+#lawyers_info_container{
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: 'Quicksand',sans-serif;
+}
+#lawyer_detail_1{
+    transition: 1s;
+    background: url(lawyer_page_img/family_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_1::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ce;
+    z-index: -1
+}
+#lawyer_detail_2{
+    transition: 1s;
+    background: url(lawyer_page_img/divorce_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_2::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ce;
+    z-index: -1
+}
+#lawyer_detail_3{
+    transition: 1s;
+    background: url(lawyer_page_img/corporate_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_3::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ce;
+    z-index: -1
+}
+#lawyer_detail_4{
+    transition: 1s;
+    background: url(lawyer_page_img/goverment_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_4::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000b9;
+    z-index: -1
+}
+#lawyer_detail_5{
+    transition: 1s;
+    background: url(lawyer_page_img/contract_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_5::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000b9;
+    z-index: -1
+}
+#lawyer_detail_6{
+    transition: 1s;
+    background: url(lawyer_page_img/tax_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_6::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000a1;
+    z-index: -1
+}
+#lawyer_detail_7{
+    transition: 1s;
+    background: url(lawyer_page_img/criminal_back.jpg) no-repeat center center/cover ;
+    margin: 15px 0px;
+}
+#lawyer_detail_7::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ce;
+    z-index: -1
+}
+
+.lawyers_info{
+    max-width: 100%;
+    margin: 0px auto;
+    padding:  0 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 1;
+    padding-bottom: 60px;
+}
+.lawyer_title{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.lawyers_info_card{
+    position: relative;
+    margin: 30px 30px;
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    color: #f2f2f2;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+.lawyers_info_card:hover{
+    transform: perspective(2000px) rotate(-0deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+}
+.lawyers_info_card .lawyer_imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+
+.lawyers_info_card:hover .lawyer_imgBx{
+    transform: rotateY(-135deg);
+}
+
+.lawyers_info_card .lawyer_imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lawyers_info_card .lawyer_details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.lawyers_info_card .lawyer_details h2{
+    margin: 15px 0px;
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+}
+.lawyers_info_card .lawyer_details p{
+    margin: 15px 0px;
+    font-family: 'Manrope', sans-serif;
+}
+/* appointment button */
+.lawyer_details a{
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    background:rgb(255, 247, 247);
+    position: relative;
+    display: inline-block;
+    margin: 10px 25px;
+    border-radius: 8px;
+}
+.lawyer_details a:hover{
+    color: rgba(255, 255, 255, 1);
+    background: #007bff;;
+}
+
+/* lawyer detail list end */

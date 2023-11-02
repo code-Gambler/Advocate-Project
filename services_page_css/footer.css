@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.containerFooter {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+#footer {
+	background: linear-gradient(to bottom right, #33ccff 0%, #cc0099 100%);
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 20%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #e7e7e7;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 37px;
+	width: 37px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #007bff;
+	background-color: #ffffff;
+}
+
+.footer-col .email-footer input {
+	height: 45px;
+	width: 230px;
+	margin-top: 20px;
+	padding-left: 30px;
+	font-size: 15px;
+	border: 2px solid white;
+	border-radius: 5px;
+	background-color: rgba(172, 255, 47, 0);
+	color: white;
+}
+.footer-col .email-footer{
+	position: relative;
+}
+.footer-col .email-footer i{
+	position: absolute;
+	left: 215px;
+	top: 20px;
+	color: #015fc4;
+	font-size: 20px;
+	background-color: white;
+	padding: 12px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 2px solid white;
+	transition: 0.5s;
+}
+.footer-col .email-footer i:hover{
+	color: #000;
+}
+.footer-col .email-footer ::-webkit-input-placeholder{
+	color: rgba(255, 255, 255, 0.863);
+}

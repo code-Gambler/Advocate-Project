@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    /* overflow: hidden; */
+    user-select: none;
+    background-color: white;
+}
+
+.navbar .logo {
+    color: #007bff;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+}
+
+.navbar .logo1 {
+    color: #000000;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: -2px;
+}
+
+.navbar {
+    height: 70px;
+    background: white;
+    top: 0;
+    position: sticky;
+    /* width: 10px; */
+    z-index: 50;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .4);
+}
+
+/* animation effect */
+
+.navbar ul li ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #006fe6;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0px;
+    transition: .3s;
+}
+
+.navbar ul li ul li a:hover:after {
+    width: 100%;
+}
+
+/*------------------*/
+
+.navbar ul {
+    float: right;
+    padding-right: 400px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: black;
+    display: block;
+    background-color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    color: #007bff;
+}
+
+.navbar ul ul {
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+.navbar ul ul li {
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-left: 4px solid #007bff;
+    margin: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: none;
+}
+
+.navbar ul ul li a {
+    line-height: 50px;
+}
+
+.navbar ul ul ul {
+    border-top: none;
+}
+
+.navbar ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.navbar ul ul li a i {
+    margin-left: 5px;
+}
+
+.navbar .button {
+    position: absolute;
+    top: 12px;
+    padding: 10px 35px;
+    text-align: center;
+    background-color: #007bff;
+    right: 61px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 255, 0);
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .button:hover {
+    background-color: #228cfd;
+    border: 2px solid #0066d3;
+}

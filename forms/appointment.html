@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="appointment.css">
+
+    <title>APPOINTMENT FORM</title>
+</head>
+
+<body>
+    <!-- ======================Navigation Menu Start====================== -->
+    <!-- <div id="for_quick_arrow"></div>
+    <section class="navbar">
+        <a href="/home.html"><label class="logo">Legal<span style="color: #000;">Help</span></label>
+        </a>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="Services_page.html">SERVICES</a></li>
+            <li><a href="lawyer_page.html">LAWYER</a></li>
+            <li><a href="forms/contact_us.html">CONTACT US</a></li>
+        </ul>
+        <div>
+            <!-- <a href="/forms/appointment.php" >Appointment</a> -->
+        </div>
+    </section>  
+
+    <!-- ======================Navigation Menu End====================== -->
+    <div class="container">
+
+        <form target="_blank" action="https://formsubmit.co/2b31e57cee6f70f1740a815eaf5e800e" id="form" method="POST">
+            <span id="logintitle">APPOINTMENT FORM</span>
+            <div class="inputusername">
+                <input type="text" class="inputusernamec" id="i" name="firstname" placeholder="First Name" required>
+                <input type="text" class="inputusernamec " id="j" name="lastname" placeholder="Last Name" required>
+            </div>
+
+            <div class="inputusername">
+                <input type="tel" class="inputusernamec" id="i" name="number" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                <input type="text" class="inputusernamec" id="j" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="inputusername">
+                <input type="date" class="inputusernamec" name="date" placeholder="Enter Date" required>
+            </div>
+
+            <div class="inputusername">
+                <select name="platform" id="" required>
+                    <option value="">Select Meeting Platform</option>
+                    <option value="">Meet Physically</option>
+                    <option value="">Consulting Through Call</option>
+                </select>
+            </div>
+
+            <div class="inputusername">
+                <select name="subject" id="subject" required>
+                    <option value="" selected="selected">Select Lawyer Type</option>
+                </select>
+                <select name="topic" id="topic" required>
+                    <option value="" selected="selected">Select Lawyer</option>
+
+                </select>
+                <select name="chepter" id="chapter" required>
+                    <option value="" selected="selected">Select Time</option>
+                </select>
+            </div>
+            <script>
+                var subjectObject = {
+                    "Family Lawyer": {
+                        "Dilip Nagar": ["11:00", "12:00", "13:00", "15:00"],
+                        "Purna Patel": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Divorce Lawyer": {
+                        "Jagruti Bhavsar": ["11:00", "12:00", "13:00", "15:00"],
+                        "Rajiv Rajpurohit": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Corporate Lawyer": {
+                        "Jyoti Sagar": ["11:00", "12:00", "13:00", "15:00"],
+                        "Shardul Shroff": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Goverment Lawyer": {
+                        "Mukul Rohtangi": ["11:00", "12:00", "13:00", "15:00"],
+                        "Milon Banerji": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Contract Lawyer": {
+                        "Hitesh Soni": ["11:00", "12:00", "13:00", "15:00"],
+                        "Minaxi Lekhi": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Tax Lawyer": {
+                        "Harish Salve": ["11:00", "12:00", "13:00", "15:00"],
+                        "Kashmiri Lal Goyal": ["11:00", "12:00", "13:00", "15:00"]
+                    },
+                    "Crimnal Lawyer": {
+                        "Shanti Bhushan": ["11:00", "12:00", "13:00", "15:00"],
+                        "Sushil Kumar": ["11:00", "12:00", "13:00", "15:00"]
+                    }
+                }
+                window.onload = function() {
+                    var subjectSel = document.getElementById("subject");
+                    var topicSel = document.getElementById("topic");
+                    var chapterSel = document.getElementById("chapter");
+                    for (var x in subjectObject) {
+                        subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                    }
+                    subjectSel.onchange = function() {
+                        //empty Chapters- and Topics- dropdowns
+                        chapterSel.length = 1;
+                        topicSel.length = 1;
+                        //display correct values
+                        for (var y in subjectObject[this.value]) {
+                            topicSel.options[topicSel.options.length] = new Option(y, y);
+                        }
+                    }
+                    topicSel.onchange = function() {
+                        //empty Chapters dropdown
+                        chapterSel.length = 1;
+                        //display correct values
+                        var z = subjectObject[subjectSel.value][this.value];
+                        for (var i = 0; i < z.length; i++) {
+                            chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                        }
+                    }
+                }
+            </script>
+            <div class="inputusername">
+                <textarea name="problem" id="" cols="25" rows="10" placeholder="Write Your Problem Here"></textarea>
+            </div>
+            <div class="inputusername">
+
+                
+            <button id="linktofee" type="submit" >Book Appointment</button>
+            <button type="button" onclick="history.back()" value="Cancel">Cancel</button>
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
